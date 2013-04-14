@@ -5,6 +5,7 @@ RailsWebservices::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   match 'profile/:id' => 'profile#profile'
+  match 'profile/all' => 'profile#all'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
