@@ -5,6 +5,7 @@ class ProfileController < ApplicationController
 
   def profile
     @profile = Profile.find(params[:id])
+
     respond_to do |format|
       format.json { render :json => @profile}
     end
@@ -12,6 +13,7 @@ class ProfileController < ApplicationController
 
   def profile
     @profiles = Profile.all()
+
     respond_to do |format|
       format.json { render :json => @profiles}
     end
