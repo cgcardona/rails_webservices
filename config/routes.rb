@@ -1,10 +1,10 @@
 RailsWebservices::Application.routes.draw do
-  root :to => 'profile#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
+  match 'profile/:id' => 'profile#profile'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -13,6 +13,7 @@ RailsWebservices::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :profile
 
   # Sample resource route with options:
   #   resources :products do
